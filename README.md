@@ -56,9 +56,9 @@ carried through the Dedicated pillar and the values section.
 - [ ] **"Read all 593 reviews" link** — the button in the reviews summary is an `href="#"` stub. Point it at Ted's Experience.com / Zillow / Google profile.
 - [ ] **Fairway's secure online application URL** — the "Apply online" link in the contact block is a `#` stub.
 - [ ] **Footer legal block** — Fairway corporate NMLS ID, branch address, licensed states, state-specific disclosures, and complaint contact. Ted's individual NMLS is filled in; the rest is still a bracketed placeholder. **The whole site's marketing copy and the footer must go through Fairway compliance before publication.**
-- [ ] **Licensed states.** The copy still makes no service-area claim. The reviews suggest Puget Sound plus at least Texas — add the real licensed-state list once confirmed, and consider naming the primary market in headings and meta descriptions for local search.
+- [ ] **Licensed states.** Washington is named as the primary market in page titles, meta descriptions, hero kicker, About copy, footers and the JSON-LD `areaServed`. The footer legal block still needs the full list of states Ted is actually licensed in (the reviews include a Texas client), supplied by Fairway compliance.
 - [ ] **Official Fairway logo lockup** — the "Powered by Fairway Home Mortgage" badges are set in type. `.fairway-badge` already supports an `<img>`.
-- [ ] **Photos** — every slot renders as a styled dark frame with a caption describing what belongs there, so nothing looks broken while you wait on a shoot. Replace the `<div class="photo-label">…</div>` inside each `.photo-frame` with an `<img>`:
+- [ ] **Photos** — see `assets/img/README.md` for filenames and sizes. Every slot renders as a styled dark frame with a caption describing what belongs there, so nothing looks broken while you wait on a shoot. Replace the `<div class="photo-label">…</div>` inside each `.photo-frame` with an `<img>`:
 
 ```html
 <div class="photo-frame">
