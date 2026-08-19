@@ -119,6 +119,12 @@ Open Graph tags to the real domain, and add an OG image once a landscape photo e
 
 ## Notes on the build
 
+- **Reading level** — the body copy is written at roughly a 3rd-grade level
+  (Flesch-Kincaid 2.7, reading ease 91, average sentence 8.7 words). Short sentences,
+  common words, no em-dashes. Keep new copy to that standard: if a sentence runs past
+  about 12 words or needs a three-syllable word, split it or swap the word. The two
+  exceptions are the footer legal block, which is required compliance language and must
+  stay verbatim, and the client reviews, which are quoted exactly as written.
 - **Typography** — Newsreader (display) and Figtree (body), loaded from Google Fonts,
   with system fallbacks. Deliberately different from the reference site's fonts so this
   reads as Ted's site rather than a copy of Michael Martin's.

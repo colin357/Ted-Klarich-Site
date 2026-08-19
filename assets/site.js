@@ -67,8 +67,8 @@
         '&body=' + encodeURIComponent(lines.join('\n'));
       var note = document.getElementById('form-status');
       if (note) {
-        note.textContent = 'Opening your email app with this message ready to send. ' +
-          'Prefer to talk? Call or text (206) 401-1878.';
+        note.textContent = 'Your email app is opening with this message ready to send. ' +
+          'Would you rather talk? Call or text (206) 401-1878.';
         note.style.display = 'block';
       }
     });
