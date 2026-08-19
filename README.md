@@ -1,20 +1,31 @@
 # Ted Klarich · Fairway Home Mortgage — website
 
-A static, dependency-free marketing site for Ted Klarich, mortgage loan officer with
-Fairway Home Mortgage. Built to match the structure and quality level of the reference
-site provided (Martin Mortgage Group's "The MMG Way"), with Ted's own brand idea at the
+A static, dependency-free single-page marketing site for Ted Klarich, mortgage loan
+officer with Fairway Home Mortgage. Built to the quality level of the reference site
+provided (Martin Mortgage Group's "The MMG Way"), with Ted's own brand idea at the
 center: **TrusTED. DedicaTED. AppreciaTED.**
 
-## Pages
+## Structure
+
+A single page, `index.html`, plus shared assets.
 
 | File | What it is |
 |---|---|
-| `index.html` | Homepage — hero, trust bar, the three TED pillars, communication promise, about Ted, seven specialties, six-step process, learning center, values, reviews, after-closing, contact form |
-| `the-ted-standard.html` | The brand philosophy page — the six-part TED Standard (TrusTED, EducaTED, DedicaTED, CommunicaTED, AnticipaTED, AppreciaTED), expectations for clients and agents, what happens when a deal goes sideways |
-| `buyers.html` | Purchase paths — first-time buyers, VA, FHA, investment properties, relocation, complex files — plus buyer FAQ |
-| `homeowners.html` | Refinancing (four reasons), downsizing, the annual review, homeowner FAQ |
+| `index.html` | The whole site — hero, trust bar, the problem, the three TED pillars, communication promise, about Ted, seven specialties, six-step process, learning center, values, reviews, after-closing, contact form |
 | `assets/styles.css` | All styling. Design tokens are the `:root` variables at the top |
 | `assets/site.js` | Scroll reveals, mobile menu, FAQ accordion, contact form handoff |
+| `assets/img/` | Photos — see the README in that folder for filenames and sizes |
+
+Every nav item is an in-page anchor (`#standard`, `#pathways`, `#learn`, `#about`,
+`#reviews`, `#contact`), and all seven specialty cards route to the contact form.
+
+Earlier revisions had three additional pages — `the-ted-standard.html`, `buyers.html`
+and `homeowners.html` — covering the six-part TED Standard, the purchase paths with a
+buyer FAQ, and refinancing/downsizing with a homeowner FAQ. They were removed in favor
+of a single page. Nothing is lost permanently: `git log --diff-filter=D --name-only`
+finds the commit, and `git show <commit>^:buyers.html` prints any of them back out if
+you later want that content folded into the homepage. The two FAQs are the most
+worthwhile part to reclaim.
 
 No build step, no framework, no dependencies. Open `index.html` in a browser, or serve
 the folder (`python3 -m http.server`) and visit `localhost:8000`.
@@ -26,7 +37,7 @@ TED."* That's the organizing idea of the whole site, the same way "The Confidenc
 organizes the reference site. It shows up as:
 
 - The homepage headline, set in three lines with `TED` in Fairway green.
-- Three pillars on the homepage, expanded to six on `the-ted-standard.html`.
+- Three pillars in the TED Standard section, each with the client's own words underneath.
 - The `.ted` CSS class — write `Trus<span class="ted">TED</span>` anywhere and the
   suffix picks up the accent color automatically (it flips to bright green on dark
   backgrounds).
@@ -42,9 +53,9 @@ carried through the Dedicated pillar and the values section.
 
 **Now live on the site (supplied and in place):**
 
-- Phone **(206) 401-1878** everywhere — nav, mobile menu, contact block, footers, final CTAs, and the form's fallback message. *Note: the intake form listed +1 206 510 0744; the site uses 206-401-1878 as supplied later. Confirm the old number isn't also in use before pointing ads at this page.*
+- Phone **(206) 401-1878** everywhere — nav, mobile menu, contact block, footer, final CTA, and the form's fallback message. *Note: the intake form listed +1 206 510 0744; the site uses 206-401-1878 as supplied later. Confirm the old number isn't also in use before pointing ads at this page.*
 - Email **ted.klarich@fairwaymc.com** — contact block, footers, and the form's `data-email`.
-- **NMLS #1897317** — footer legal on all four pages and Ted's About block.
+- **NMLS #1897317** — footer legal and Ted's About block.
 - **4.99 average across 593 reviews** — hero badge, trust bar, About stats, reviews headline, and the score block. Also in the homepage meta description and Open Graph tags.
 - **Four real client reviews** (Lisa/Tacoma, Alex/Kirkland, Deborah/Kirkland, Kaitlin/Mc Dade) published verbatim in a 2×2 grid, with a standard variability disclaimer beneath.
 - **Schema.org JSON-LD** on the homepage — name, job title, phone, email, NMLS identifier, employer, specialties. (Aggregate rating markup is deliberately omitted: Google doesn't honor self-serving review markup for a business's own site, and it can draw a manual action.)
@@ -66,13 +77,11 @@ carried through the Dedicated pillar and the values section.
 </div>
 ```
 
-| Slot | Page | Crop |
-|---|---|---|
-| ~~Hero portrait~~ **in place** (`ted-hero.jpg`, 343×480 — a larger original would render sharper) | `index.html` | 5:7 vertical |
-| About Ted | `index.html` | 3:4 vertical |
-| Working portrait | `the-ted-standard.html` | 4:5 vertical |
-| Buyers | `buyers.html` | 4:5 vertical |
-| Homeowners | `homeowners.html` | 4:5 vertical |
+| Slot | Where | Crop | Status |
+|---|---|---|---|
+| Hero portrait | top of the page | 5:7 vertical | **in place** (`ted-hero.jpg`, 343×480 — a larger original would render sharper) |
+| About Ted | About section | 3:4 vertical | placeholder frame |
+| Social share image | `og:image` meta tag | 1.91:1 **landscape**, 1200×630 | not set |
 
 - [ ] **Learning center** — six cards on `index.html` marked "Coming soon" pointing at the contact section. Point each `href` at the real article or video as it's published, and update the duration. (Ted rated his content system a 2 out of 5, so this section is built to fill in over time rather than launch complete.)
 
@@ -106,7 +115,7 @@ folder on existing hosting. There's nothing to build.
 
 For GitHub Pages: Settings → Pages → deploy from the branch root. Then update the
 `<link rel="canonical">` on `index.html` (currently `https://www.tedklarich.com/`) and the
-Open Graph tags to the real domain, and add an OG image once photos exist.
+Open Graph tags to the real domain, and add an OG image once a landscape photo exists.
 
 ## Notes on the build
 
@@ -118,5 +127,5 @@ Open Graph tags to the real domain, and add an OG image once photos exist.
 - **Accessibility** — skip link, visible focus rings, semantic landmarks, `aria-expanded`
   on the menu and FAQ toggles, and a `prefers-reduced-motion` block that disables every
   animation and hover transform.
-- **Verified** — all four pages parse as well-formed HTML, every internal link and anchor
-  resolves, and there's no horizontal overflow at 1440px, 390px or 360px wide.
+- **Verified** — the page parses as well-formed HTML, every anchor resolves, and there's
+  no horizontal overflow at 1440px, 390px or 360px wide.
