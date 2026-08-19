@@ -38,27 +38,27 @@ carried through the Dedicated pillar and the values section.
 
 ---
 
-## ⚠️ Before this goes live — required fill-ins
+## Status of the fill-ins
 
-Everything below is a deliberate placeholder. I did not invent numbers, reviews, or
-licensing details for a regulated business. Search the codebase for `[` to find them all.
+**Now live on the site (supplied and in place):**
 
-**Compliance and identity**
-- [ ] `NMLS #[ID]` — Ted's individual NMLS number (appears in the footer of all four pages and in the About section on `index.html`).
-- [ ] Footer legal block — Fairway corporate NMLS ID, branch address, licensed states, state-specific disclosures, and complaint contact. The block currently carries a bracketed placeholder plus standard pre-approval language. **The whole footer must be reviewed and approved by Fairway compliance before publication**, along with all marketing copy on the site.
-- [ ] Confirm Ted's exact Fairway email. The site currently uses `ted.klarich@fairwaymc.com` as an assumed address — it appears in the footer, the contact block, and as the contact form's `data-email`.
-- [ ] Branch/office address in the contact section of `index.html`.
-- [ ] Fairway's secure online application URL — the "Apply online" link in the contact block is a `#` stub.
-- [ ] Replace the text "Powered by Fairway Home Mortgage" badges with the official approved logo lockup (`.fairway-badge` supports an `<img>` — see the commented markup).
+- Phone **(206) 401-1878** everywhere — nav, mobile menu, contact block, footers, final CTAs, and the form's fallback message. *Note: the intake form listed +1 206 510 0744; the site uses 206-401-1878 as supplied later. Confirm the old number isn't also in use before pointing ads at this page.*
+- Email **ted.klarich@fairwaymc.com** — contact block, footers, and the form's `data-email`.
+- **NMLS #1897317** — footer legal on all four pages and Ted's About block.
+- **4.99 average across 593 reviews** — hero badge, trust bar, About stats, reviews headline, and the score block. Also in the homepage meta description and Open Graph tags.
+- **Four real client reviews** (Lisa/Tacoma, Alex/Kirkland, Deborah/Kirkland, Kaitlin/Mc Dade) published verbatim in a 2×2 grid, with a standard variability disclaimer beneath.
+- **Schema.org JSON-LD** on the homepage — name, job title, phone, email, NMLS identifier, employer, specialties. (Aggregate rating markup is deliberately omitted: Google doesn't honor self-serving review markup for a business's own site, and it can draw a manual action.)
 
-**Numbers and proof**
-- [ ] Trust bar stats on `index.html` — `[##]` years, `[###]` families, `[#.#★]` review score. Every figure published must be documentable. Delete any stat that can't be verified rather than estimating it.
-- [ ] Reviews section on `index.html` — three placeholder cards. Paste real client reviews verbatim, keep the source (Google / Zillow / Experience.com) with each, and confirm client permission and Fairway's advertising review requirements before publishing.
-- [ ] Licensed states. The copy deliberately avoids claiming any geography; the phone number's 206 area code suggests the Seattle area, but nothing on the site states a service area yet. Add it once the licensed-state list is confirmed.
+**Still needed before launch:**
 
-**Photos** — every photo slot renders as a styled dark frame with a caption describing
-what belongs there, so nothing looks broken while you wait on a shoot. Replace the
-`<div class="photo-label">…</div>` inside each `.photo-frame` with an `<img>`:
+- [ ] **Years in mortgage lending** — the last bracketed stat, in the trust bar on `index.html`. Fill it in or delete that one stat block (the grid reflows cleanly at five).
+- [ ] **Branch/office address** — contact section of `index.html`.
+- [ ] **"Read all 593 reviews" link** — the button in the reviews summary is an `href="#"` stub. Point it at Ted's Experience.com / Zillow / Google profile.
+- [ ] **Fairway's secure online application URL** — the "Apply online" link in the contact block is a `#` stub.
+- [ ] **Footer legal block** — Fairway corporate NMLS ID, branch address, licensed states, state-specific disclosures, and complaint contact. Ted's individual NMLS is filled in; the rest is still a bracketed placeholder. **The whole site's marketing copy and the footer must go through Fairway compliance before publication.**
+- [ ] **Licensed states.** The copy still makes no service-area claim. The reviews suggest Puget Sound plus at least Texas — add the real licensed-state list once confirmed, and consider naming the primary market in headings and meta descriptions for local search.
+- [ ] **Official Fairway logo lockup** — the "Powered by Fairway Home Mortgage" badges are set in type. `.fairway-badge` already supports an `<img>`.
+- [ ] **Photos** — every slot renders as a styled dark frame with a caption describing what belongs there, so nothing looks broken while you wait on a shoot. Replace the `<div class="photo-label">…</div>` inside each `.photo-frame` with an `<img>`:
 
 ```html
 <div class="photo-frame">
@@ -74,11 +74,7 @@ what belongs there, so nothing looks broken while you wait on a shoot. Replace t
 | Buyers | `buyers.html` | 4:5 vertical |
 | Homeowners | `homeowners.html` | 4:5 vertical |
 
-**Content**
-- [ ] Learning center on `index.html` — six cards marked "Coming soon" pointing at the
-  contact section. Point each `href` at the real article or video as it's published, and
-  update the duration. (Ted rated his content system a 2 out of 5, so this section is
-  built to be filled in over time rather than launched complete.)
+- [ ] **Learning center** — six cards on `index.html` marked "Coming soon" pointing at the contact section. Point each `href` at the real article or video as it's published, and update the duration. (Ted rated his content system a 2 out of 5, so this section is built to fill in over time rather than launch complete.)
 
 ---
 

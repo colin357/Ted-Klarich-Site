@@ -68,7 +68,7 @@
       var note = document.getElementById('form-status');
       if (note) {
         note.textContent = 'Opening your email app with this message ready to send. ' +
-          'Prefer to talk? Call or text (206) 510-0744.';
+          'Prefer to talk? Call or text (206) 401-1878.';
         note.style.display = 'block';
       }
     });
