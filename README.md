@@ -53,7 +53,7 @@ carried through the Dedicated pillar and the values section.
 
 **Now live on the site (supplied and in place):**
 
-- Phone **(206) 401-1878** everywhere — nav, mobile menu, contact block, footer, final CTA, and the form's fallback message. *Note: the intake form listed +1 206 510 0744; the site uses 206-401-1878 as supplied later. Confirm the old number isn't also in use before pointing ads at this page.*
+- Phone **(206) 510-0744** everywhere — nav, mobile menu, contact block, footer, final CTA, and the form's fallback message. *Note: 206-401-1878 was supplied at one point and later reverted to this number. Confirm which line Ted actually wants published before pointing ads at this page.*
 - Email **ted.klarich@fairwaymc.com** — contact block, footers, and the form's `data-email`.
 - **NMLS #1897317** — footer legal and Ted's About block.
 - **4.99 average across 593 reviews** — hero badge, trust bar, About stats, reviews headline, and the score block. Also in the homepage meta description and Open Graph tags.
