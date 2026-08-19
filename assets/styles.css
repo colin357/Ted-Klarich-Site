@@ -74,7 +74,9 @@ footer .fairway-badge .fw{color:#fff}
    deliberate design element rather than a broken image. */
 .photo-frame{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-deep) 100%);border-radius:24px;aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
 .photo-frame::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 20%,rgba(140,198,63,.16),transparent 55%);pointer-events:none}
-.photo-frame img{width:100%;height:100%;object-fit:cover;position:relative;z-index:1}
+.photo-frame img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;position:relative;z-index:1}
+/* Matches a 5:7 portrait source exactly — no crop through the subject. */
+.photo-frame.portrait{aspect-ratio:5/7}
 .photo-label{position:relative;z-index:2;color:rgba(255,255,255,.5);font-size:13px;padding:30px;text-align:center;letter-spacing:.04em;line-height:1.7}
 .photo-label strong{display:block;color:rgba(255,255,255,.85);font-family:var(--display);font-size:18px;margin-bottom:8px;letter-spacing:0}
 

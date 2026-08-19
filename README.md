@@ -68,7 +68,7 @@ carried through the Dedicated pillar and the values section.
 
 | Slot | Page | Crop |
 |---|---|---|
-| Hero portrait | `index.html` | 4:5 vertical, ~1200×1500 |
+| ~~Hero portrait~~ **in place** (`ted-hero.jpg`, 343×480 — a larger original would render sharper) | `index.html` | 5:7 vertical |
 | About Ted | `index.html` | 3:4 vertical |
 | Working portrait | `the-ted-standard.html` | 4:5 vertical |
 | Buyers | `buyers.html` | 4:5 vertical |
