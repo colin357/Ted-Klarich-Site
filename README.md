@@ -56,13 +56,13 @@ carried through the Dedicated pillar and the values section.
 - Phone **(206) 510-0744** everywhere — nav, mobile menu, contact block, footer, final CTA, and the form's fallback message. *Note: 206-401-1878 was supplied at one point and later reverted to this number. Confirm which line Ted actually wants published before pointing ads at this page.*
 - Email **ted.klarich@fairwaymc.com** — contact block, footers, and the form's `data-email`.
 - **NMLS #1897317** — footer legal and Ted's About block.
+- **Seven years in mortgage lending** — trust bar stat, About copy and mini-stats, and the homepage meta description.
 - **4.99 average across 593 reviews** — hero badge, trust bar, About stats, reviews headline, and the score block. Also in the homepage meta description and Open Graph tags.
 - **Four real client reviews** (Lisa/Tacoma, Alex/Kirkland, Deborah/Kirkland, Kaitlin/Mc Dade) published verbatim in a 2×2 grid, with a standard variability disclaimer beneath.
 - **Schema.org JSON-LD** on the homepage — name, job title, phone, email, NMLS identifier, employer, specialties. (Aggregate rating markup is deliberately omitted: Google doesn't honor self-serving review markup for a business's own site, and it can draw a manual action.)
 
 **Still needed before launch:**
 
-- [ ] **Years in mortgage lending** — the last bracketed stat, in the trust bar on `index.html`. Fill it in or delete that one stat block (the grid reflows cleanly at five).
 - [ ] **Branch/office address** — contact section of `index.html`.
 - [ ] **"Read all 593 reviews" link** — the button in the reviews summary is an `href="#"` stub. Point it at Ted's Experience.com / Zillow / Google profile.
 - [ ] **Fairway's secure online application URL** — the "Apply online" link in the contact block is a `#` stub.
