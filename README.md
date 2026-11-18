@@ -11,7 +11,7 @@ A single page, `index.html`, plus shared assets.
 
 | File | What it is |
 |---|---|
-| `index.html` | The whole site — hero, trust bar, the problem, the three TED pillars, communication promise, about Ted, seven specialties, six-step process, learning center, values, reviews, after-closing, contact form |
+| `index.html` | The whole site — hero, trust bar, the problem, the three TED pillars, communication promise, about Ted, seven specialties, six-step process, common questions, values, reviews, after-closing, contact form |
 | `assets/styles.css` | All styling. Design tokens are the `:root` variables at the top |
 | `assets/site.js` | Scroll reveals, mobile menu, FAQ accordion, contact form handoff |
 | `assets/img/` | Photos — see the README in that folder for filenames and sizes |
@@ -61,29 +61,20 @@ carried through the Dedicated pillar and the values section.
 - **Four real client reviews** (Lisa/Tacoma, Alex/Kirkland, Deborah/Kirkland, Kaitlin/Mc Dade) published verbatim in a 2×2 grid, with a standard variability disclaimer beneath.
 - **Schema.org JSON-LD** on the homepage — name, job title, phone, email, NMLS identifier, employer, specialties. (Aggregate rating markup is deliberately omitted: Google doesn't honor self-serving review markup for a business's own site, and it can draw a manual action.)
 
-**Still needed before launch:**
+**Placeholders removed (Nov 2026).** Every visible placeholder was taken off the page
+rather than left as a stub. Add these back once the real details exist:
 
-- [ ] **Branch/office address** — contact section of `index.html`.
-- [ ] **"Read all 593 reviews" link** — the button in the reviews summary is an `href="#"` stub. Point it at Ted's Experience.com / Zillow / Google profile.
-- [ ] **Fairway's secure online application URL** — the "Apply online" link in the contact block is a `#` stub.
-- [ ] **Footer legal block** — Fairway corporate NMLS ID, branch address, licensed states, state-specific disclosures, and complaint contact. Ted's individual NMLS is filled in; the rest is still a bracketed placeholder. **The whole site's marketing copy and the footer must go through Fairway compliance before publication.**
-- [ ] **Licensed states.** Washington is named as the primary market in page titles, meta descriptions, hero kicker, About copy, footers and the JSON-LD `areaServed`. The footer legal block still needs the full list of states Ted is actually licensed in (the reviews include a Texas client), supplied by Fairway compliance.
+- [ ] **Branch/office address** — the "Office" row was removed from the contact block.
+- [ ] **"Read all 593 reviews" button** — removed from the reviews summary. Re-add it pointing at Ted's Experience.com / Zillow / Google profile.
+- [x] **Online application** — the contact block's "Apply online" link now uses the same Fairway application URL as the Apply Now buttons.
+- [ ] **Footer legal block** — the bracketed placeholder was removed. Fairway corporate NMLS ID, branch address, licensed states, state-specific disclosures and complaint contact still need to be supplied by Fairway compliance. **The whole site's marketing copy and the footer must go through Fairway compliance before publication.**
+- [ ] **Licensed states.** Washington is named as the primary market throughout. The full list of states Ted is licensed in (the reviews include a Texas client) belongs in the footer legal block.
 - [ ] **Official Fairway logo lockup** — the "Powered by Fairway Home Mortgage" badges are set in type. `.fairway-badge` already supports an `<img>`.
-- [ ] **Photos** — see `assets/img/README.md` for filenames and sizes. Every slot renders as a styled dark frame with a caption describing what belongs there, so nothing looks broken while you wait on a shoot. Replace the `<div class="photo-label">…</div>` inside each `.photo-frame` with an `<img>`:
+- [ ] **About photo** — the empty photo frame was removed and the About section is now a single text column (`.about-grid.solo`). To bring a photo back, restore the two-column grid with a `.about-photo` frame holding `<img src="assets/img/ted-about.jpg">` (3:4 crop) — see `assets/img/README.md`.
+- [ ] **Social share image** — `og:image` is not set. Needs a 1200×630 landscape image.
+- [ ] **Learning center** — the six "Coming soon" video cards are now a "Common questions" grid; each card links to the contact form. When Ted publishes articles or videos, point each card's `href` at the real piece.
 
-```html
-<div class="photo-frame">
-  <img src="assets/img/ted-hero.jpg" alt="Ted Klarich, mortgage loan officer">
-</div>
-```
-
-| Slot | Where | Crop | Status |
-|---|---|---|---|
-| Hero portrait | top of the page | 5:7 vertical | **in place** (`ted-hero.jpg`, 343×480 — a larger original would render sharper) |
-| About Ted | About section | 3:4 vertical | placeholder frame |
-| Social share image | `og:image` meta tag | 1.91:1 **landscape**, 1200×630 | not set |
-
-- [ ] **Learning center** — six cards on `index.html` marked "Coming soon" pointing at the contact section. Point each `href` at the real article or video as it's published, and update the duration. (Ted rated his content system a 2 out of 5, so this section is built to fill in over time rather than launch complete.)
+The hero portrait (`ted-hero.jpg`, 343×480) is in place; a larger original would render sharper.
 
 ---
 
