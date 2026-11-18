@@ -119,7 +119,7 @@ Open Graph tags to the real domain, and add an OG image once a landscape photo e
 - **Typography** — Newsreader (display) and Figtree (body), loaded from Google Fonts,
   with system fallbacks. Deliberately different from the reference site's fonts so this
   reads as Ted's site rather than a copy of Michael Martin's.
-- **Color** — Fairway green kept as the primary, deepened slightly toward evergreen, over
+- **Color** — Fairway green `#0A9848` as the primary (`--evergreen`, with a darker `#087A3A` for hover), over
   a warm ivory and a deep navy for the dark sections. Tokens live in `:root`.
 - **Accessibility** — skip link, visible focus rings, semantic landmarks, `aria-expanded`
   on the menu and FAQ toggles, and a `prefers-reduced-motion` block that disables every

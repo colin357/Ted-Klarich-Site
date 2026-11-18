@@ -5,8 +5,8 @@
 
 :root{
   /* Brand */
-  --evergreen:#0B5D3B;      /* primary — deep Pacific Northwest green */
-  --kelly:#0C9748;          /* hover / secondary green */
+  --evergreen:#0A9848;      /* primary — Fairway green */
+  --kelly:#087A3A;          /* hover — darker shade of the primary */
   --bright:#8CC63F;         /* accent green — rules, numbers, highlights */
   --amber:#D98C2B;          /* warm accent — used sparingly */
   --navy:#0E2233;           /* dark section background */
@@ -53,7 +53,7 @@ h1 .accent,h2 .accent,h3 .accent{color:var(--evergreen)}
 
 .btn{display:inline-block;padding:16px 32px;border-radius:100px;font-weight:600;font-size:15px;text-decoration:none;transition:transform .2s ease,box-shadow .2s ease,background .2s ease,border-color .2s ease,color .2s ease;cursor:pointer;border:none;font-family:var(--body);text-align:center}
 .btn:hover{transform:translateY(-2px)}
-.btn-primary{background:var(--evergreen);color:#fff;box-shadow:0 8px 24px rgba(11,93,59,.28)}
+.btn-primary{background:var(--evergreen);color:#fff;box-shadow:0 8px 24px rgba(10,152,72,.28)}
 .btn-primary:hover{background:var(--kelly)}
 .btn-outline{background:transparent;color:var(--ink);border:1.5px solid rgba(21,33,28,.28)}
 .btn-outline:hover{border-color:var(--evergreen);color:var(--evergreen)}
@@ -156,7 +156,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(241,239,233,
 .standard-head p{font-size:18px;color:var(--slate)}
 .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .pillar{background:var(--ivory);border-radius:20px;padding:40px 34px;border:1.5px solid transparent;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
-.pillar:hover{transform:translateY(-4px);border-color:var(--evergreen);box-shadow:0 20px 44px rgba(11,93,59,.1)}
+.pillar:hover{transform:translateY(-4px);border-color:var(--evergreen);box-shadow:0 20px 44px rgba(10,152,72,.1)}
 .pillar .pnum{font-family:var(--display);font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--bright);margin-bottom:16px}
 .pillar h3{font-size:clamp(26px,3vw,32px);margin-bottom:6px}
 .pillar .psub{font-family:var(--display);font-style:italic;font-size:17px;color:var(--evergreen);margin-bottom:14px}
@@ -215,7 +215,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(241,239,233,
 .pathways .sub{font-size:18px;color:var(--slate);margin-bottom:56px;max-width:620px}
 .path-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .path-card{background:var(--ivory);border-radius:18px;padding:36px 30px;text-decoration:none;display:flex;flex-direction:column;justify-content:space-between;min-height:230px;transition:all .25s ease;border:1.5px solid transparent}
-.path-card:hover{background:#fff;border-color:var(--evergreen);transform:translateY(-4px);box-shadow:0 20px 40px rgba(11,93,59,.1)}
+.path-card:hover{background:#fff;border-color:var(--evergreen);transform:translateY(-4px);box-shadow:0 20px 40px rgba(10,152,72,.1)}
 .path-card h3{font-size:22px;margin-bottom:10px}
 .path-card p{font-size:15px;color:var(--slate)}
 .path-card .go{font-weight:600;color:var(--evergreen);font-size:14px;margin-top:24px}
@@ -303,7 +303,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(241,239,233,
 
 /* ---------- FINAL CTA ---------- */
 .final{background:var(--navy-deep);color:#fff;text-align:center;position:relative;overflow:hidden}
-.final::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 120%,rgba(11,93,59,.55),transparent 62%),radial-gradient(ellipse at 15% 0%,rgba(140,198,63,.14),transparent 55%)}
+.final::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 120%,rgba(10,152,72,.55),transparent 62%),radial-gradient(ellipse at 15% 0%,rgba(140,198,63,.14),transparent 55%)}
 .final .wrap{position:relative;z-index:2}
 .final h2{font-size:clamp(36px,5.4vw,64px);max-width:840px;margin:0 auto 26px;color:#fff}
 .final p{font-size:19px;color:rgba(255,255,255,.78);max-width:620px;margin:0 auto 40px}
